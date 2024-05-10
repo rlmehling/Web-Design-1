@@ -1,0 +1,110 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+html {
+  font-size: 18px;
+}
+
+/* Set box sizing model */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #eeeeee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+main {
+  padding: 40px;
+}
+
+/* Parent Container that wraps cards */
+.card-list {
+	display: flexbox;
+	
+}
+
+/* Individual Cards */
+.card-list .card {
+  display: flex;
+  background: white;
+  margin: 10px 0;
+}
+
+.card:hover {
+  border-top: 4px solid dodgerblue;
+}
+
+/* First Card using pseudo element */
+.card-list .card:nth-child(1) {
+	max-width: 100%;
+	flex-direction: row;
+}
+
+/* Second Card using pseudo element */
+.card-list .card:nth-child(2) {
+    max-width: 49%;
+	flex-direction: column;
+    float: left;
+}
+
+/* Third Card using pseudo element */
+.card-list .card:nth-child(3) {
+    max-width: 49%;
+	flex-direction: column;
+    float: right;
+}
+
+
+/* Image inside of card, style keeps aspect ratio */
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* parent for card title, paragraph and link */
+.card .card-content {
+  padding: 15px 15px 0 15px;
+}
+
+ .card-content h1, .card-content p {
+  margin-top: 0;
+}
+
+.card-content h1 {
+  font-size: 2rem;
+  color: #121212;
+  margin-bottom: 5px;
+}
+.card-content p {
+  color: #666666;
+}
+
+/* Link inside of article */
+.card-content a {
+  float: right;
+  color: dodgerblue;
+  font-family: "Open Sans Condensed";
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 4px 0;
+  text-decoration: none;
+}
+
+/* Arrow after link */
+.card-content a:after {
+  position: relative;
+ 	right: -15px;
+  bottom: 0;
+    content: "→";
+    background: DodgerBlue;
+    color: white;
+    margin-left: 10px;
+    margin-right: 0;
+    padding: 4px 8px;
+}

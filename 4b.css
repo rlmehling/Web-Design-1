@@ -1,0 +1,71 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+html {
+  font-size: 18px;
+}
+
+/* Set box sizing model */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+main {
+  background: #ddd;
+  padding: 40px;
+}
+
+.flex-order, .flex-order-column {
+  /* remove bulleted list style */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* flex these parents! */
+	display: flex;
+}
+
+.flex-order-column {
+  /* make me a column! */
+	flex-direction: column;
+}
+
+
+.flex-order li, .flex-order-column li {
+  /* list items styles */
+  list-style: none;
+  background: white;
+  margin: 2px;
+  padding: 5px 30px;
+}
+
+.flex-order li:nth-child(6) {
+  /* move to first position */
+  order: -1;
+}
+
+.flex-order li:nth-child(3) {
+  /* move to last position */
+  order: 6;
+
+}
+
+.flex-order-column li:nth-child(1) {
+  /* move to end of list */
+	order: 6;
+  
+}
+
+.flex-order-column li:nth-child(3) {
+  /* move to second to last position */
+	order: 5;
+
+}

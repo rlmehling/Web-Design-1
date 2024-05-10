@@ -1,0 +1,99 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+html {
+  font-size: 18px;
+}
+
+/* Set box sizing model */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+main {
+  padding: 40px;
+}
+
+/* Flexbox CSS */
+.flex-parent {
+    display: flexbox;
+
+}
+
+/* horizontal left */
+#horizontal-left {
+    display: flex;
+    align-items: flex-start;
+
+
+}
+
+/* horizontal right */
+#horizontal-right {
+    display: flex;
+    justify-content: end;
+
+}
+
+#vertical {
+
+}
+
+/* Spaced */
+#spaced {
+    display: flex;
+    justify-content: space-between;
+\
+}
+
+/* Vertical Reverse */
+#vertical-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+/* All <div> tags inside of #flex-parent */
+.flex-parent div {
+
+  
+  padding: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+ 
+}
+
+/* Box Styles */
+.box-red {
+  background: red;
+}
+
+.box-yellow {
+  background: yellow;
+}
+
+.box-blue {
+  background: blue;
+}
+
+.box-green {
+  background: green;
+}
+
+.box-orange {
+  background: orange;
+}
+
+.box-purple {
+  background: purple;
+}

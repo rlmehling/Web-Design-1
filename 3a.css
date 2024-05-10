@@ -1,0 +1,48 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+html {
+  font-size: 18px;
+}
+
+/* Set box sizing model */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+main {
+  background: #ddd;
+  padding: 40px;
+}
+
+/* Image reset to flow based on width on parent elemet */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Implicit Grid */
+.grid {
+    display: grid; /* make this into a grid parent using the display property */
+    grid-gap: 10px; /* 10 pixel grid gap */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* se the grid-template-columns snippet provided on the HTML page */
+    grid-template-rows: repeat(2fr, 1fr); /* don't forget to add a grid-template-rows rule'*/
+    list-style: none;  /* takes the bullets off the li tags */
+    margin: 0;
+    padding: 0; 
+}
+
+.grid li {
+  /* removes the default margin and padding of this element */
+  margin: 0;
+  padding: 0;

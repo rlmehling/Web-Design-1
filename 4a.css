@@ -1,0 +1,76 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+html {
+  font-size: 18px;
+}
+
+/* Set box sizing model */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+main {
+  background: #ddd;
+  padding: 40px;
+}
+
+#grid-areas {
+  min-height: 100vh;
+  text-align: center;
+  display: grid; /* Grid Styles go here on the parent */
+  grid-gap: 10px;
+  grid-template-columns: 6, 1fr;
+  grid-template-rows: 6, 1fr;
+  grid-template-areas: 
+  "header s1 s1 s1 s1 s1" 
+  "header s2 s2 . . ."
+  "header s2 s2 . s3 aside" 
+  "header s2 s2 . s3 aside"
+  "header . . . . aside" 
+  "footer footer footer footer footer footer";
+}
+
+#header {
+  background: #333;
+  color: white;
+  grid-area: header;
+}
+
+#sect-1 {
+  background: darkorange;
+  color: white;
+  grid-area: s1;
+}
+
+#sect-2 {
+  background: green;
+  color: white;
+  grid-area: s2;
+}
+
+#sect-3 {
+  background: purple;
+  color: white;
+  grid-area: s3;
+}
+
+#aside {
+  background: teal;
+  color: white;
+  grid-area: aside;
+}
+
+#footer {
+  background: yellow;
+  grid-area: footer;
+}
